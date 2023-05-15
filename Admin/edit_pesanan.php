@@ -27,7 +27,7 @@ $pesanan = $st->fetch();
                         <div class="invalid-feedback" data-sb-feedback="tanggal:required">tanggal is required.</div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="jenisProduk">Nama Tempat Wisata</label>
+                        <label class="form-label" for="jenisProduk">Nama Produk</label>
                         <?php
 
                         $sql = "SELECT * FROM produk";

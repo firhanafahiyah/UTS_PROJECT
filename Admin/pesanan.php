@@ -34,7 +34,7 @@ $rs = $dbh->query($sql);
                         <tr>
                             <th>No</th>
                             <th>Tanggal</th>
-                            <th>Nama Tempat Wisata</th>
+                            <th>Nama Produk</th>
                             <th>Nama Pemesan</th>
                             <th>QTY</th>
                             <th>Total Harga</th>
@@ -46,46 +46,45 @@ $rs = $dbh->query($sql);
                         $no = 1;
                         foreach ($rs as $row) :
                         ?>
-                        <tr>
-                            <td>
-                                <?= $no++ ?>
-                            </td>
-                            <td>
-                                <?= $row['tanggal'] ?>
-                            </td>
-                            <td>
-                                <?= $row['nama_produk'] ?>
-                            </td>
-                            <td>
-                                <?= $row['nama_pemesan'] ?>
-                            </td>
-                            <td>
-                                <?= $row['qty'] ?>
-                            </td>
-                            <td>
-                                <?= $row['total_harga'] ?>
-                            </td>
-                            <td>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="detail_pesanan.php?id=<?= $row['id'] ?>" class="btn btn-primary">
-                                            Detail
-                                        </a>
+                            <tr>
+                                <td>
+                                    <?= $no++ ?>
+                                </td>
+                                <td>
+                                    <?= $row['tanggal'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['nama_produk'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['nama_pemesan'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['qty'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['total_harga'] ?>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="detail_pesanan.php?id=<?= $row['id'] ?>" class="btn btn-primary">
+                                                Detail
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="edit_pesanan.php?id=<?= $row['id'] ?>" class="btn btn-info">
+                                                Edit
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="delete_pesanan.php?iddel=<?= $row['id'] ?>" class="btn btn-danger" onclick="if(!confirm('Anda Yakin Hapus Data Produk <?= $row['nama_produk'] ?>?')) {return false}">
+                                                Delete
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <a href="edit_pesanan.php?id=<?= $row['id'] ?>" class="btn btn-info">
-                                            Edit
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="delete_pesanan.php?iddel=<?= $row['id'] ?>" class="btn btn-danger"
-                                            onclick="if(!confirm('Anda Yakin Hapus Data Produk <?= $row['nama_produk'] ?>?')) {return false}">
-                                            Delete
-                                        </a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
                         <?php endforeach ?>
                     </tbody>
                 </table>

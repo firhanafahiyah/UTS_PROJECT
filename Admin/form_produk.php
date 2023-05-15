@@ -19,10 +19,10 @@ require_once 'dbkoneksi.php';
                         <div class="invalid-feedback" data-sb-feedback="kode:required">Kode is required.</div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="namaKotaHotel">Nama Tempat Wisata</label>
-                        <input class="form-control" name="nama" id="namaKotaHotel" type="text"
-                            placeholder="Nama Tempat Wisata" data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="namaKotaHotel:required">Nama Tempat Wisata is
+                        <label class="form-label" for="namaKotaHotel">Nama Produk</label>
+                        <input class="form-control" name="nama" id="namaKotaHotel" type="text" placeholder="Nama Produk"
+                            data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="namaKotaHotel:required">Nama Produk is
                             required.</div>
                     </div>
                     <div class="mb-3">

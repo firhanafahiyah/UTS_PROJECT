@@ -17,7 +17,8 @@ $st->execute([$_id]);
 $row = $st->fetch();
 ?>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <div class="container-fluid m-5">
     <div class="row">
@@ -34,7 +35,7 @@ $row = $st->fetch();
                             <td><?= $row['kode'] ?></td>
                         </tr>
                         <tr>
-                            <th>Nama Kota atau Hotel</th>
+                            <th>Nama Produk</th>
                             <td><?= $row['nama'] ?></td>
                         </tr>
                         <tr>

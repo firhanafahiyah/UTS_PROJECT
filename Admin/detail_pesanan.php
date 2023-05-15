@@ -20,7 +20,8 @@ $row = $st->fetch();
 
 
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <div class="container m-5">
     <div class="row">
         <div class="col-md-12">
@@ -36,7 +37,7 @@ $row = $st->fetch();
                             <td><?= $row['tanggal'] ?></td>
                         </tr>
                         <tr>
-                            <td>Nama Tempat Wisata</td>
+                            <td>Nama Produk</td>
                             <td><?= $row['nama_produk'] ?></td>
                         </tr>
                         <tr>

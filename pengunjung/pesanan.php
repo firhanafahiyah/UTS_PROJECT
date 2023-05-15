@@ -34,7 +34,7 @@ $rs = $dbh->query($sql);
                         <tr>
                             <th>No</th>
                             <th>Tanggal</th>
-                            <th>Nama Tempat Wisata</th>
+                            <th>Nama Produk</th>
                             <th>Nama Pemesan</th>
                             <th>QTY</th>
                             <th>Total Harga</th>
